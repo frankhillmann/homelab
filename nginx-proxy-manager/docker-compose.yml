@@ -1,0 +1,13 @@
+# Nginx Proxy Manager -- Reverse Proxy mit TLS-Zertifikaten per Klick
+# Nutzt interne SQLite -- keine Zugangsdaten in der Compose nötig.
+services:
+  npm:
+    image: jc21/nginx-proxy-manager:latest
+    restart: unless-stopped
+    ports:
+      - "80:80"      # HTTP
+      - "443:443"    # HTTPS
+      - "81:81"      # Admin-Oberfläche
+    volumes:
+      - ./data:/data
+      - ./letsencrypt:/etc/letsencrypt
