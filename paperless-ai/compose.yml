@@ -1,0 +1,23 @@
+services:
+  paperless-ai:
+    image: clusterzx/paperless-ai:latest
+    container_name: paperless-ai
+    restart: unless-stopped
+    ports:
+      - '3000:3000'
+    environment:
+      - PAPERLESS_AI_INITIAL_SETUP=no
+      - PAPERLESS_API_URL=${PAPERLESS_API_URL}
+      - PAPERLESS_API_TOKEN=${PAPERLESS_API_TOKEN}
+      - AI_PROVIDER=ollama
+      - OLLAMA_API_URL=${OLLAMA_API_URL}
+      - OLLAMA_MODEL=qwen2.5:7b
+      - SCAN_INTERVAL=*/30 * * * *
+      - ADD_AI_PROCESSED_TAG=yes
+      - AI_PROCESSED_TAG_NAME=KI
+      - PROCESS_PREDEFINED_DOCUMENTS=yes
+      - RESTRICT_TO_EXISTING_CORRESPONDENTS=yes
+      - RESTRICT_TO_EXISTING_TAGS=yes
+      - RESTRICT_TO_EXISTING_DOCUMENT_TYPES=yes
+    volumes:
+      - ./data:/app/data

@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  glance:
+    container_name: glance
+    image: glanceapp/glance:latest
+    restart: unless-stopped
+    environment:
+      - TZ=Europe/Berlin
+    volumes:
+      - /path/to/glance/config:/app/config
+      - /path/to/glance/assets:/app/assets
+      #- /var/run/docker.sock:/var/run/docker.sock:ro
+    ports:
+      - "8080:8080"
+    networks:
+      my-net:
+        ipv4_address: 10.0.0.10   # eigene IP anpassen
+
+networks:
+  my-net:
+    external: true

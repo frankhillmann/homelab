@@ -1,0 +1,7 @@
+services:
+  rss-proxy:
+    build: .
+    container_name: rss-proxy
+    restart: unless-stopped
+    ports:
+      - "8086:8086"
