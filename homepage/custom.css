@@ -1,0 +1,11 @@
+/* Services nebeneinander (horizontal) */
+ul.services-list {
+  flex-direction: row !important;
+  flex-wrap: wrap !important;
+  gap: 0.5rem !important;
+  align-items: stretch !important;
+}
+ul.services-list > li.service {
+  flex: 1 1 200px !important;
+  min-width: 0 !important;
+}

@@ -1,0 +1,30 @@
+# Lesezeichen -- reine Links, laufen sofort beim ersten Öffnen.
+- Eigenes:
+    - Website:
+        - abbr: FH
+          href: https://frank-hillmann.de
+    - homelab Repo:
+        - abbr: GL
+          href: https://github.com/frankhillmann/homelab
+
+- Self-Hosting:
+    - Homepage Doku:
+        - abbr: HP
+          href: https://gethomepage.dev
+    - Dashboard Icons:
+        - abbr: IC
+          href: https://github.com/walkxcode/dashboard-icons
+    - r/selfhosted:
+        - abbr: RS
+          href: https://www.reddit.com/r/selfhosted
+
+- Tools:
+    - GitHub:
+        - abbr: GH
+          href: https://github.com
+    - Home Assistant:
+        - abbr: HA
+          href: https://www.home-assistant.io
+    - Proxmox:
+        - abbr: PX
+          href: https://www.proxmox.com

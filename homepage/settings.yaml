@@ -1,0 +1,23 @@
+# Allgemeine Einstellungen -- https://gethomepage.dev/configs/settings/
+title: My Homepage
+language: de
+headerStyle: clean
+fullWidth: true
+useEqualHeights: true
+
+quicklaunch:
+  searchDescriptions: true
+  showSearchSuggestions: true
+  provider: duckduckgo
+  target: _blank
+
+cardBlur: sm
+
+# Layout -- Spalten klappen auf Mobilgeräten automatisch untereinander.
+layout:
+  Schnellzugriff:
+    style: column
+    columns: 4
+  Eigene Dienste:
+    style: column
+    columns: 4

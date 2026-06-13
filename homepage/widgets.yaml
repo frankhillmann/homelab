@@ -1,0 +1,23 @@
+# Kopfzeilen-Widgets -- funktionieren sofort, ohne Zugangsdaten.
+- greeting:
+    text_size: xl
+    text: Willkommen
+
+- datetime:
+    locale: de
+    text_size: xl
+    format:
+      dateStyle: long
+      timeStyle: short
+
+- resources:
+    cpu: true
+    memory: true
+    cputemp: true
+    uptime: true
+    units: metric
+    refresh: 3000
+
+- search:
+    provider: duckduckgo
+    target: _blank

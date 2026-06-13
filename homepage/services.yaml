@@ -1,0 +1,84 @@
+# ============================================================
+# Beispiel-Konfiguration für gethomepage.dev
+# ============================================================
+# Diese Gruppe funktioniert SOFORT -- nur öffentliche Links, keine Einrichtung.
+- Schnellzugriff:
+    - Homepage Doku:
+        icon: homepage.png
+        href: https://gethomepage.dev
+        description: Doku zu diesem Dashboard
+    - GitHub:
+        icon: github.png
+        href: https://github.com
+        description: Code & Repositories
+    - Home Assistant:
+        icon: home-assistant.png
+        href: https://www.home-assistant.io
+        description: Smart-Home-Plattform
+    - Proxmox:
+        icon: proxmox.png
+        href: https://www.proxmox.com
+        description: Virtualisierung
+
+# ============================================================
+# OPTIONAL: eigene Dienste mit Live-Widgets
+# ============================================================
+# So bindest du eigene Dienste mit Status & Live-Daten ein.
+# 1. Block unten EINKOMMENTIEREN (führende '# ' entfernen)
+# 2. *.local-Adressen durch deine eigenen ersetzen
+# 3. Tokens/Passwörter NICHT hier eintragen -> als {{HOMEPAGE_VAR_NAME}}
+#    in die .env (Vorlage: .env.example)
+#
+# - Eigene Dienste:
+#     - Home Assistant:
+#         icon: home-assistant.png
+#         href: http://homeassistant.local:8123
+#         statusStyle: dot
+#         widget:
+#           type: homeassistant
+#           url: http://homeassistant.local:8123
+#           key: {{HOMEPAGE_VAR_HA_TOKEN}}
+#     - Proxmox:
+#         icon: proxmox.png
+#         href: https://proxmox.local:8006
+#         statusStyle: dot
+#         widget:
+#           type: proxmox
+#           url: https://proxmox.local:8006
+#           username: {{HOMEPAGE_VAR_PROXMOX_USER}}
+#           password: {{HOMEPAGE_VAR_PROXMOX_TOKEN}}
+#     - AdGuard Home:
+#         icon: adguard-home.png
+#         href: http://adguard.local
+#         statusStyle: dot
+#         widget:
+#           type: adguard
+#           url: http://adguard.local
+#           username: {{HOMEPAGE_VAR_ADGUARD_USER}}
+#           password: {{HOMEPAGE_VAR_ADGUARD_PASSWORD}}
+#     - Paperless-ngx:
+#         icon: paperless-ngx.png
+#         href: http://paperless.local:8000
+#         statusStyle: dot
+#         widget:
+#           type: paperlessngx
+#           url: http://paperless.local:8000
+#           username: {{HOMEPAGE_VAR_PAPERLESS_USER}}
+#           password: {{HOMEPAGE_VAR_PAPERLESS_PASSWORD}}
+#     - Immich:
+#         icon: immich.png
+#         href: http://immich.local:2283
+#         statusStyle: dot
+#         widget:
+#           type: immich
+#           url: http://immich.local:2283
+#           key: {{HOMEPAGE_VAR_IMMICH_TOKEN}}
+#           version: 2
+#     - Uptime Kuma:
+#         icon: uptime-kuma.png
+#         href: http://uptimekuma.local:3001
+#         statusStyle: dot
+#         widget:
+#           type: uptimekuma
+#           url: http://uptimekuma.local:3001
+#           slug: meine-statusseite
